@@ -1,0 +1,103 @@
+Category,Component,Part Number,Description,Package,Verified Dimensions (L×W×H mm),Qty,Unit Price (1000qty),Supplier,Notes,Changes from v3
+MAJOR ICs,MCU/BLE,nRF52810-QFAA-R,BLE 5.0 SoC 192KB Flash,QFN48,6×6×0.85,1,€8.50,Mouser / JLCPCB,Pre-certified BLE module,✅ Dimensions verified (from v3)
+MAJOR ICs,Cellular+GPS Module,Quectel BG600L-M3,LTE-M/NB-IoT + GNSS + 2G fallback,LCC,⚠️ UNVERIFIED,1,€19.00,Quectel Direct / Mouser,🔴 PENDING DATASHEET VERIFICATION,🔄 REPLACED BG95-M3 + MAX-M10S (integrated solution)
+MAJOR ICs,eSIM Chip,ST4SIM-200M,MFF2 eSIM eUICC,MFF2,5×6×0.75,1,€3.50,STMicro / Mouser,GSMA-compliant eSIM for cellular,✅ From v3 (verified)
+MAJOR ICs,PPG Sensor,Maxim MAX30102,Heart rate + SpO2 optical sensor,OLGA14,5.6×3.3×1.55,1,€3.50,Maxim / Mouser / JLCPCB,Medical-grade optical sensor,✅ Dimensions verified (from v3)
+MAJOR ICs,Temperature Sensor,TI TMP102,±0.5°C accuracy I2C,SOT563,1.6×1.2×0.5,1,€1.20,TI / Mouser / JLCPCB,Ultra-low power temp sensor,✅ Dimensions verified (from v3)
+MAJOR ICs,Accelerometer,Analog Devices ADXL372,Ultra-low power 3-axis ±200g,LGA16,3×3.25×1.06,1,€2.70,Analog Devices / Mouser / JLCPCB,High-g fall detection,✅ Dimensions verified (from v3)
+MAJOR ICs,LDO Regulator,MCP1700T-3302E/TT,3.3V 250mA LDO,SOT-23,2.9×1.3×0.95,1,€0.45,Microchip / Mouser / JLCPCB,3.6V max component protection,✅ Dimensions verified (from v3)
+MAJOR ICs,Charging IC,MCP73831T-2ACI/OT,Li-poly CC/CV charger 500mA,SOT-23-5,3.1×1.8×1.3,1,€0.55,Microchip / Mouser / JLCPCB,Pogo pin charging circuit,✅ Dimensions verified (from v3)
+MAJOR ICs,NFC Chip,ST25DV04K-IER8C3,4Kbit I2C NFC EEPROM,UFDFPN8,2×3×0.6,1,€0.50,STMicro / Mouser / JLCPCB,Offline medical data backup,✅ Dimensions verified (from v3)
+MAJOR ICs,Haptic Driver,TI DRV2605L,Haptic motor driver with library,VQFN10,3×3×0.75,1,€0.70,TI / Mouser / JLCPCB,Smart haptic feedback patterns,✅ Dimensions verified (from v3)
+MAJOR ICs,External Flash,Winbond W25Q32JVZPIG,4MB SPI NOR Flash,WSON-8,6×5×0.75,1,€1.20,Winbond / Mouser / JLCPCB,30 days sensor data storage,✅ Dimensions verified (from v3)
+,,,,,Subtotal ICs,,€47.10,,,+€1.50 from v3 (BG600L-M3 integrated solution)
+,,,,,,,,,
+POWER,Battery A,LP301020,Li-poly 50mAh 3.7V with PCM,Pouch cell,20×10×3.0,1,€1.80,Alibaba / Battery Space,UN38.3 certified required,✅ Dimensions verified (from v3)
+POWER,Battery B,LP301020,Li-poly 50mAh 3.7V with PCM,Pouch cell,20×10×3.0,1,€1.80,Alibaba / Battery Space,UN38.3 certified required,✅ Dimensions verified (from v3)
+POWER,Battery Connectors,JST SH 1.0mm 2-pin,Micro battery connector,SMD,—,2,€0.10,JST / Mouser / JLCPCB,Or solder direct to save cost,✅ From v3
+POWER,Pogo Pins,Mill-Max 0929-7-15-20-77-14-11-0,Spring-loaded contacts 1.5A,Ø1.5mm 3mm travel,—,2,€0.40,Mill-Max / Mouser,Charging interface,✅ From v3
+POWER,Haptic Motor,Jinlong G1040003D,LRA vibration motor 2.0 Grms,Coin LRA,∅10×4.0,1,€0.90,Jinlong / Vybronics / DigiKey,MAXIMUM G-force (2.0 Grms),✅ Dimensions verified (from v3)
+POWER,Button,Snaptron 4DT Series,Metal dome switch,Dome,∅4×0.3,1,€0.10,Snaptron / Mouser,Stainless housing button actuator,✅ From v3
+,,,,,Subtotal Power,,€5.10,,,
+,,,,,,,,,
+PASSIVES,Decoupling Capacitors,0.1µF 10V X7R,Ceramic capacitor,0402,1.0×0.5×0.5,8,€0.01,Mouser / JLCPCB,Near every IC VDD pin,✅ From v3
+PASSIVES,Bulk Capacitors,10µF 10V X7R,Ceramic capacitor,0805,2.0×1.25×0.6,3,€0.06,Mouser / JLCPCB,Power supply bulk storage,✅ From v3
+PASSIVES,I2C Pull-up Resistors,4.7kΩ 1% 0.1W,Chip resistor,0402,1.0×0.5×0.35,2,€0.01,Mouser / JLCPCB,SDA/SCL lines,✅ From v3
+PASSIVES,NFC GPIO Pull-up,10kΩ 1% 0.1W,Chip resistor,0402,1.0×0.5×0.35,1,€0.01,Mouser / JLCPCB,For UFDFPN8 open-drain GPO,✅ From v3
+PASSIVES,Misc Resistors,10kΩ 100kΩ various,Chip resistors,0402,1.0×0.5×0.35,5,€0.01,Mouser / JLCPCB,Pull-ups dividers,✅ From v3
+PASSIVES,RTC Crystal,32.768kHz ±20ppm,SMD crystal,3.2x1.5mm,3.2×1.5×0.8,1,€0.20,Mouser / JLCPCB,RTC for nRF52810 timing,✅ From v3
+PASSIVES,Crystal Load Caps,12pF NP0/C0G,Ceramic capacitor,0402,1.0×0.5×0.5,2,€0.01,Mouser / JLCPCB,Crystal matching network,✅ From v3
+PASSIVES,Schottky Diode,BAT60JFILM,Reverse protection diode,SOD-323,1.7×1.25×0.8,1,€0.10,STMicro / Mouser / JLCPCB,Battery protection circuit,✅ From v3
+PASSIVES,RGB LED,Everlight 19-337/R6GHBHC-M01/2T,Common cathode RGB LED,1616,1.6×1.6×0.8,1,€0.08,Everlight / Mouser / JLCPCB,Multi-color status (R:620nm G:515nm B:455nm),✅ From v3
+PASSIVES,RGB LED Resistors,330Ω 1% 0.1W,Current limit resistors for RGB,0402,1.0×0.5×0.35,3,€0.01,Mouser / JLCPCB,Separate for each R/G/B channel,✅ From v3
+,,,,,Subtotal Passives,,€0.70,,,Rounded to €1.50 with 50% buffer
+,,,,,,,,,
+MECHANICAL,Bottom Housing,Stainless steel 304 laser cut + welded,Open-top waterproof cup (5 sides),40×23×5mm,—,1,€3.50,China / Eastern Europe sheet metal,Bottom + 4 walls. 1 cutout for sapphire (PPG to skin),✅ From v3
+MECHANICAL,Sealing Lid,Stainless steel 304 laser cut,Top plate with window cutouts + screw holes,40×23×1mm,—,1,€2.00,Same factory as housing,Screws down with gasket (IP67). 2 cutouts for GPS/Cell windows,✅ From v3
+MECHANICAL,Decorative Top Cover,Stainless steel 304 0.8mm,Brushed finish with laser-etched mesh,40×23×1mm,—,1,€2.00,Factory fabrication + laser etch mesh,Band connector. Magnetically attaches. RF transparent mesh,✅ From v3
+MECHANICAL,Sapphire Window (PPG),Sapphire glass polished,Lifetime clarity for PPG sensor,∅6×0.5,—,1,€3.00,Alibaba Guangdong / AliExpress,Glued into BOTTOM housing (sensor faces skin),✅ From v3
+MECHANICAL,PC Window (GPS),Clear polycarbonate RF transparent,GPS antenna window,10×10×0.5,—,1,€0.30,Laser cut polycarbonate,Glued into SEALING LID (faces upward),✅ From v3 - BG600L-M3 integrated GPS
+MECHANICAL,PC Window (Cellular),Clear polycarbonate RF transparent,Cellular antenna window,10×10×0.5,—,1,€0.30,Laser cut polycarbonate,Glued into SEALING LID (faces upward),✅ From v3 - BG600L-M3 integrated cellular
+MECHANICAL,Waterproof Gasket,Silicone rubber Shore A 50,IP67 seal,Custom die-cut,—,1,€0.40,Alibaba / McMaster-Carr,Between housing rim and sealing lid,✅ From v3
+MECHANICAL,Lid Screws,M2×6mm stainless Phillips,Compress gasket for IP67 seal,—,—,4,€0.05,McMaster / Mouser / Alibaba,Screw lid to housing (4 corners),✅ From v3
+MECHANICAL,Magnets,Neodymium N52 Ni-plated,Decorative cover attachment,∅4×1,—,4,€0.05,K&J Magnetics / Alibaba,Glue into decorative cover,✅ From v3
+MECHANICAL,Spring Bars,Stainless steel watch pins,Band attachment mechanism,Ø1.8mm 25mm,—,2,€0.50,Alibaba / watch parts suppliers,Install on decorative cover,✅ From v3
+MECHANICAL,Adhesive/Epoxy,UV-cure epoxy,For gluing windows,—,—,1,€0.30,McMaster / Amazon,UV-cure for windows (30s cure). CA for magnets,✅ From v3
+MECHANICAL,Dome Button Actuator,Stainless steel 304,External button for dome switch,∅5×2,—,1,€0.20,Custom machining,Press-fit into housing with O-ring seal,✅ From v3
+,,,,,Subtotal Mechanical,,€11.70,,,
+,,,,,,,,,
+PCB & ASSEMBLY,Main PCB Fabrication,2-layer flex polyimide 0.2mm,Double-sided flex PCB,28×21mm,—,1,€4.00,JLCPCB / PCBWay,1000qty production pricing. Prototype €22/unit,✅ From v3
+PCB & ASSEMBLY,Main PCB Assembly,SMT pick-and-place + reflow,All major ICs + passives ~350 joints,Double-sided,—,1,€2.50,JLCPCB SMT Assembly,Includes BGA/QFN X-ray inspection stencil,✅ From v3
+PCB & ASSEMBLY,Secondary PCB2 Fabrication,2-layer rigid FR4 1.6mm,Small rigid PCB for Zone B,20×10mm,—,1,€0.30,JLCPCB,Rigid board below battery stack,✅ From v3
+PCB & ASSEMBLY,Secondary PCB2 Assembly,SMT pick-and-place,Passives only ~25 joints,Single-sided,—,1,€0.80,JLCPCB SMT Assembly,Simple assembly for support components,✅ From v3
+PCB & ASSEMBLY,Manual Assembly Labor,Housing assembly waterproofing test,Final assembly QC,—,—,1,€0.00,Self assembly,Windows magnets gaskets testing,✅ From v3
+,,,,,Subtotal PCB,,€7.60,,,Production 1000qty (Prototype ~€50/unit)
+,,,,,,,,,
+TOTAL ELECTRONICS,,,,,PER UNIT COST (1000qty),€73.00,,,Integrated module solution (was €71.50 in v3)
+TOTAL with 10% buffer,,,,,REALISTIC COST,€80.30,,,Was €78.65 in v3 (+€1.65 for integrated GPS+Cellular)
+,,,,,,,,,
+NOTES - BOM v4 CHANGES FROM v3,,,,,,,,,
+🔴 CRITICAL CHANGE: Module consolidation for space savings,,,,,,,,,
+"1. REPLACED BG95-M3 (€9.50) + MAX-M10S (€8.00) → BG600L-M3 (€19.00 est.)",,,,,,,,,
+   - Rationale: Integrated cellular + GPS + 2G fallback in single module,,,,,,,,,
+   - Space savings: 2 modules → 1 module = simpler PCB layout,,,,,,,,,
+   - Height advantage: Single module vs stacked/adjacent modules,,,,,,,,,
+   - Cost impact: +€1.50/unit (€17.50 → €19.00),,,,,,,,,
+,,,,,,,,,
+⚠️ VERIFICATION STATUS: BG600L-M3 PENDING DATASHEET VERIFICATION,,,,,,,,,
+"2. BG600L-M3 dimensions marked as UNVERIFIED - awaiting datasheet",,,,,,,,,
+   - Need to verify: Exact L×W×H dimensions,,,,,,,,,
+   - Need to verify: Package type and pin count,,,,,,,,,
+   - Need to verify: Integrated GPS confirmation,,,,,,,,,
+   - Need to verify: 2G fallback confirmation,,,,,,,,,
+   - Need to verify: Power consumption (TX/RX/PSM/GPS modes),,,,,,,,,
+   - Need to verify: Operating voltage and temperature range,,,,,,,,,
+,,,,,,,,,
+3. Price estimate (€19.00) is CONSERVATIVE - may be lower,,,,,,,,,
+   - Typical pricing: Integrated modules cost less than separate,,,,,,,,,
+   - BG95-M3 alone: €9.50 | MAX-M10S alone: €8.00 | Total: €17.50,,,,,,,,,
+   - BG600L-M3 estimated: €18-20 (used €19.00 for safety margin),,,,,,,,,
+   - Will update with actual Mouser/Quectel pricing once confirmed,,,,,,,,,
+,,,,,,,,,
+4. All other components unchanged from v3 (previously verified),,,,,,,,,
+,,,,,,,,,
+BOM EVOLUTION HISTORY,,,,,,,,,
+"v1 → v2: Initial component selection, many dimension errors",,,,,,,,,
+"v2 → v3: Systematic verification, 15 changes (5 dimension fixes, 4 part number fixes, etc.)",,,,,,,,,
+"v3 → v4: Module consolidation (BG95-M3+MAX-M10S → BG600L-M3), PENDING verification",,,,,,,,,
+,,,,,,,,,
+NEXT STEPS,,,,,,,,,
+"✅ BOM v4 created with BG600L-M3 integrated solution",,,,,,,,,
+"🔴 PRIORITY: Obtain and verify BG600L-M3 datasheet",,,,,,,,,
+"⏳ Update dimensions once datasheet verified",,,,,,,,,
+"⏳ Update pricing with actual supplier quotes",,,,,,,,,
+"⏳ Recalculate PCB layout with verified BG600L-M3 footprint",,,,,,,,,
+"⏳ Recalculate power budget with verified current consumption",,,,,,,,,
+"⏳ Verify part availability and lead time",,,,,,,,,
+,,,,,,,,,
+VERIFICATION REQUIRED FOR,,,,,,,,,
+"Component: Quectel BG600L-M3",,,,,,,,,
+"Status: ⚠️ UNVERIFIED",,,,,,,,,
+"Priority: 🔴 CRITICAL",,,,,,,,,
+"Impact: PCB layout, height budget, power consumption, cost",,,,,,,,,
+"Action: User to download datasheet from Quectel or Mouser",,,,,,,,,
