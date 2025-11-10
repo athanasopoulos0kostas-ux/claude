@@ -1,0 +1,117 @@
+Category,Component,Part Number,Description,Verification Status,Claimed Dimensions (L×W×H mm),Qty,Est. Price (1000qty),Supplier,Critical Questions
+MAJOR ICs,MCU/BLE,nRF52810-QFAA-R,BLE 5.0 SoC 192KB Flash,❌ UNVERIFIED,6×6×0.85 (claimed),1,€8.50,Mouser / JLCPCB,Is QFN48 actually 6×6mm or different? Height 0.85mm correct?
+MAJOR ICs,Cellular+GPS Module,Quectel BG600L-M3,LTE-M/NB-IoT + GNSS + 2G fallback,❌ UNVERIFIED,Unknown,1,€19.00,Quectel / Mouser,Does this module exist? Integrated GPS? 2G fallback? Actual dimensions?
+MAJOR ICs,eSIM Chip,ST4SIM-200M,MFF2 eSIM eUICC,❌ UNVERIFIED,5×6×0.75 (claimed),1,€3.50,STMicro / Mouser,Is this an actual eSIM chip? MFF2 dimensions correct? Does it exist?
+MAJOR ICs,PPG Sensor,Maxim MAX30102,Heart rate + SpO2 optical sensor,❌ UNVERIFIED,5.6×3.3×1.55 (claimed),1,€3.50,Maxim / Mouser,OLGA14 package correct? Power consumption at 20mA LED?
+MAJOR ICs,Temperature Sensor,TI TMP102,±0.5°C accuracy I2C,❌ UNVERIFIED,1.6×1.2×0.5 (claimed),1,€1.20,TI / Mouser,SOT563 dimensions correct? Height 0.5mm or 0.6mm?
+MAJOR ICs,Accelerometer,Analog Devices ADXL372,Ultra-low power 3-axis ±200g,❌ UNVERIFIED,3×3.25×1.06 (claimed),1,€2.70,Analog Devices / Mouser,LGA16 dimensions correct? Power consumption?
+MAJOR ICs,LDO Regulator,MCP1700T-3302E/TT,3.3V 250mA LDO,❌ UNVERIFIED,2.9×1.3×0.95 (claimed),1,€0.45,Microchip / Mouser,Is /TT suffix SOT-23 variant? Dimensions correct?
+MAJOR ICs,Charging IC,MCP73831T-2ACI/OT,Li-poly CC/CV charger 500mA,❌ UNVERIFIED,3.1×1.8×1.3 (claimed),1,€0.55,Microchip / Mouser,SOT-23-5 dimensions correct?
+MAJOR ICs,NFC Chip,ST25DV04K-IER8C3,4Kbit I2C NFC EEPROM,❌ UNVERIFIED,2×3×0.6 (claimed),1,€0.50,STMicro / Mouser,UFDFPN8 vs UFDFPN12? Height 0.6mm or 0.85mm? Part number exists?
+MAJOR ICs,Haptic Driver,TI DRV2605L,Haptic motor driver with library,❌ UNVERIFIED,3×3×0.75 (claimed),1,€0.70,TI / Mouser,VQFN10 dimensions correct? Can drive 2.0 Grms motor?
+MAJOR ICs,External Flash,Winbond W25Q32JVZPIG,4MB SPI NOR Flash,❌ UNVERIFIED,6×5×0.75 (claimed),1,€1.20,Winbond / Mouser,Is WSON-8 really 0.75mm tall? Critical for 1mm height budget!
+,,,Subtotal ICs (ESTIMATED),,€47.10,,,
+,,,,,,,
+POWER,Battery A,LP301020,Li-poly 50mAh 3.7V with PCM,❌ UNVERIFIED,20×10×3.0 (claimed),1,€1.80,Alibaba / Battery Space,Does 3.0mm thick exist? Or is it 3.2mm? Actual capacity at 3mm?
+POWER,Battery B,LP301020,Li-poly 50mAh 3.7V with PCM,❌ UNVERIFIED,20×10×3.0 (claimed),1,€1.80,Alibaba / Battery Space,Same as Battery A - verify actual thickness!
+POWER,Battery Connectors,JST SH 1.0mm 2-pin,Micro battery connector,❌ UNVERIFIED,Varies by config,2,€0.10,JST / Mouser,Dimensions? SMD vs through-hole?
+POWER,Pogo Pins,Mill-Max 0929-7-15-20-77-14-11-0,Spring-loaded contacts 1.5A,❌ UNVERIFIED,Ø1.5mm 3mm travel,2,€0.40,Mill-Max / Mouser,Part number correct? Dimensions? Current rating verified?
+POWER,Haptic Motor,Jinlong G1040003D,LRA vibration motor 2.0 Grms,❌ UNVERIFIED,∅10×4.0 (claimed),1,€0.90,Jinlong / Vybronics,Does this part exist? (Previous motor part didn't!) 2.0 Grms verified?
+POWER,Button,Snaptron 4DT Series,Metal dome switch,❌ UNVERIFIED,∅4×0.3 (claimed),1,€0.10,Snaptron / Mouser,Part series correct? Height 0.3mm? Actuation force?
+,,,Subtotal Power (ESTIMATED),,€5.10,,,
+,,,,,,,
+PASSIVES,Decoupling Capacitors,0.1µF 10V X7R,Ceramic capacitor,⚠️ STANDARD,1.0×0.5×0.5 (typical 0402),8,€0.01,Mouser / JLCPCB,Standard part - low risk
+PASSIVES,Bulk Capacitors,10µF 10V X7R,Ceramic capacitor,⚠️ STANDARD,2.0×1.25×0.6 (typical 0805),3,€0.06,Mouser / JLCPCB,Standard part - low risk
+PASSIVES,I2C Pull-up Resistors,4.7kΩ 1% 0.1W,Chip resistor,⚠️ STANDARD,1.0×0.5×0.35 (typical 0402),2,€0.01,Mouser / JLCPCB,Standard part - low risk
+PASSIVES,NFC GPIO Pull-up,10kΩ 1% 0.1W,Chip resistor,⚠️ STANDARD,1.0×0.5×0.35 (typical 0402),1,€0.01,Mouser / JLCPCB,Standard part - low risk
+PASSIVES,Misc Resistors,10kΩ 100kΩ various,Chip resistors,⚠️ STANDARD,1.0×0.5×0.35 (typical 0402),5,€0.01,Mouser / JLCPCB,Standard part - low risk
+PASSIVES,RTC Crystal,32.768kHz ±20ppm,SMD crystal,❌ UNVERIFIED,3.2×1.5×0.8 (claimed),1,€0.20,Mouser / JLCPCB,Exact package dimensions? Load capacitance?
+PASSIVES,Crystal Load Caps,12pF NP0/C0G,Ceramic capacitor,⚠️ STANDARD,1.0×0.5×0.5 (typical 0402),2,€0.01,Mouser / JLCPCB,Standard part - low risk
+PASSIVES,Schottky Diode,BAT60JFILM,Reverse protection diode,❌ UNVERIFIED,1.7×1.25×0.8 (claimed),1,€0.10,STMicro / Mouser,SOD-323 dimensions correct?
+PASSIVES,RGB LED,Everlight 19-337/R6GHBHC-M01/2T,Common cathode RGB LED,❌ UNVERIFIED,1.6×1.6×0.8 (claimed),1,€0.08,Everlight / Mouser,Part number correct? 1616 package dimensions? Common cathode confirmed?
+PASSIVES,RGB LED Resistors,330Ω 1% 0.1W,Current limit resistors for RGB,⚠️ STANDARD,1.0×0.5×0.35 (typical 0402),3,€0.01,Mouser / JLCPCB,Standard part - low risk
+,,,Subtotal Passives (ESTIMATED),,€0.70,,,
+,,,,,,,
+MECHANICAL,Bottom Housing,SS316L laser cut + welded,Stainless steel housing,🔄 DESIGN,40×23×5mm (design spec),1,€3.50,Factory TBD,No part to verify - custom fabrication
+MECHANICAL,Sealing Lid,SS316L laser cut,Top plate with cutouts,🔄 DESIGN,40×23×1mm (design spec),1,€2.00,Factory TBD,No part to verify - custom fabrication
+MECHANICAL,Decorative Top Cover,SS316L 0.8mm,Brushed finish cover,🔄 DESIGN,40×23×1mm (design spec),1,€2.00,Factory TBD,No part to verify - custom fabrication
+MECHANICAL,Sapphire Window (PPG),Sapphire glass,Optical window for PPG,❌ UNVERIFIED,∅6×0.5 (design),1,€3.00,Alibaba / Custom,Can we get ∅6mm sapphire? Thickness options?
+MECHANICAL,PC Window (GPS),Polycarbonate,RF transparent window,❌ UNVERIFIED,10×10×0.5 (design),1,€0.30,Laser cut,Standard material - low risk
+MECHANICAL,PC Window (Cellular),Polycarbonate,RF transparent window,❌ UNVERIFIED,10×10×0.5 (design),1,€0.30,Laser cut,Standard material - low risk
+MECHANICAL,Waterproof Gasket,Silicone Shore A 50,IP67 seal,❌ UNVERIFIED,Custom die-cut,1,€0.40,Alibaba / McMaster,Can we get custom gasket? Shore A 50 available?
+MECHANICAL,Lid Screws,M2×6mm SS Phillips,Fasteners,⚠️ STANDARD,M2×6mm,4,€0.05,McMaster / Mouser,Standard hardware
+MECHANICAL,Magnets,Neodymium N52,Magnetic attachment,❌ UNVERIFIED,∅4×1 (design),4,€0.05,K&J Magnetics / Alibaba,Can we get ∅4×1mm N52 magnets?
+MECHANICAL,Spring Bars,SS watch pins,Band attachment,❌ UNVERIFIED,Ø1.8mm 25mm,2,€0.50,Alibaba,Standard watch part - verify 25mm length fits
+MECHANICAL,Adhesive/Epoxy,UV-cure epoxy,Assembly adhesive,⚠️ STANDARD,N/A,1,€0.30,McMaster / Amazon,Standard consumable
+MECHANICAL,Dome Button Actuator,SS304 custom,Button for dome switch,🔄 DESIGN,∅5×2 (design spec),1,€0.20,Custom machining,No part to verify - custom fabrication
+,,,Subtotal Mechanical (ESTIMATED),,€11.70,,,
+,,,,,,,
+PCB & ASSEMBLY,Main PCB Fabrication,2-layer flex polyimide,Double-sided flex PCB,🔄 DESIGN,28×21mm (design spec),1,€4.00,JLCPCB / PCBWay,Design spec - not a component
+PCB & ASSEMBLY,Main PCB Assembly,SMT assembly,Assembly service,🔄 SERVICE,~350 joints,1,€2.50,JLCPCB,Service - not a component
+PCB & ASSEMBLY,Secondary PCB2 Fabrication,2-layer rigid FR4,Rigid PCB,🔄 DESIGN,20×10mm (design spec),1,€0.30,JLCPCB,Design spec - not a component
+PCB & ASSEMBLY,Secondary PCB2 Assembly,SMT assembly,Assembly service,🔄 SERVICE,~25 joints,1,€0.80,JLCPCB,Service - not a component
+PCB & ASSEMBLY,Manual Assembly Labor,Final assembly,Assembly labor,🔄 SERVICE,N/A,1,€0.00,Self assembly,Service - not a component
+,,,Subtotal PCB (ESTIMATED),,€7.60,,,
+,,,,,,,
+TOTAL ELECTRONICS (ALL ESTIMATES),,,PER UNIT COST (1000qty),€73.00,,,UNVERIFIED - Based on web searches and assumptions
+TOTAL with 10% buffer,,,REALISTIC COST,€80.30,,,UNVERIFIED - Will change after datasheet verification
+,,,,,,,
+,,,,,,,
+VERIFICATION STATUS SUMMARY,,,,,,,
+Components requiring verification,15,,,,,
+Components verified from datasheets,0,,,,,
+Standard parts (low risk),9,,,,,
+Custom/design items (no verification needed),7,,,,,
+,,,,,,,
+CRITICAL COMPONENTS NEEDING DATASHEETS,,,,,,,
+Priority,Component,Part Number,Why Critical,,,
+🔴 CRITICAL,Cellular+GPS,BG600L-M3,Unknown if exists. Unknown dimensions. Unknown power. Design cannot proceed.,,
+🔴 CRITICAL,MCU,nRF52810-QFAA-R,QFN48 actual size? Flash/RAM sufficient? Power consumption?,,
+🔴 CRITICAL,Battery,LP301020,Does 3.0mm thick exist or is it 3.2mm? Capacity at 3mm thickness?,,
+🔴 CRITICAL,Haptic Motor,Jinlong G1040003D,Does this part number exist? Previous motor didn't!,,
+🔴 CRITICAL,PPG Sensor,MAX30102,Power consumption critical for battery life calculations,,
+🟡 HIGH,Flash,W25Q32JVZPIG,Height 0.75mm critical for 1mm height budget. Must verify!,,
+🟡 HIGH,NFC,ST25DV04K-IER8C3,UFDFPN8 vs UFDFPN12? Height 0.6 vs 0.85mm? Part exists?,,
+🟡 HIGH,eSIM,ST4SIM-200M,Is this an actual eSIM chip? Part exists?,,
+🟡 HIGH,Temperature,TMP102,SOT563 height: 0.5mm or 0.6mm?,,
+🟡 HIGH,Accelerometer,ADXL372,Dimensions and power consumption,,
+🟢 MEDIUM,Haptic Driver,DRV2605L,Can it drive 2.0 Grms motor?,,
+🟢 MEDIUM,LDO,MCP1700T-3302E/TT,/TT = SOT-23? Dimensions correct?,,
+🟢 MEDIUM,Charger,MCP73831T-2ACI/OT,SOT-23-5 dimensions correct?,,
+🟢 MEDIUM,RGB LED,Everlight 19-337/R6GHBHC-M01/2T,Part number correct? Common cathode?,,
+🟢 MEDIUM,Button,Snaptron 4DT,Part series exists? Dimensions?,,
+,,,,,,,
+REALITY CHECK,,,,,,,
+"Previous BOM (v3) claimed ""verified"" but verification method unknown",,,,,
+"Dimensions may be from web searches, not official datasheets",,,,,
+"Power consumption values may be typical/estimated, not from electrical characteristics tables",,,,,
+"Part numbers may have errors (like previous STSAFE-J100 that wasn't an eSIM)",,,,,
+,,,,,,,
+"Until we have ACTUAL DATASHEETS in hand, assume everything is wrong",,,,,
+,,,,,,,
+WHAT WE NEED,,,,,,,
+1. Download official datasheets (PDFs) from manufacturer websites,,,,,
+2. Extract dimensions from mechanical drawings (not product summary pages),,,,,
+3. Extract power consumption from electrical characteristics tables,,,,,
+4. Verify part numbers actually exist on Mouser/DigiKey,,,,,
+5. Check availability and lead times,,,,,
+6. Confirm package variants (QFN vs LCC vs WSON etc),,,,,
+,,,,,,,
+HOW TO PROCEED,,,,,,,
+"Option 1: User downloads datasheets as PDFs, uploads to repository",,,,,
+"Option 2: User copies specifications tables from datasheets",,,,,
+"Option 3: User verifies parts on Mouser/DigiKey and shares product page info",,,,,
+,,,,,,,
+EXPECTED OUTCOMES AFTER VERIFICATION,,,,,,,
+"Some dimensions will be correct ✅",,,,,
+"Some dimensions will be wrong ❌ (off by 0.1-1mm)",,,,,
+"Some part numbers won't exist ❌ (like previous motor)",,,,,
+"Some packages will be different ❌ (SOIC vs WSON, etc)",,,,,
+"Power consumption will likely differ from estimates",,,,,
+"Prices will change (some higher, some lower)",,,,,
+"PCB layout will need adjustments",,,,,
+"Height budget will need recalculation",,,,,
+"Battery life estimates will change",,,,,
+,,,,,,,
+THIS IS NORMAL AND EXPECTED,,,,,,,
+Better to find errors now than after ordering PCBs,,,,,
